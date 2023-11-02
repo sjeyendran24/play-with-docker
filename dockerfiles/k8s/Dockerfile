@@ -1,4 +1,4 @@
-FROM centos:8
+FROM centos:8.4
 
 COPY ./systemctl /usr/bin/systemctl
 COPY ./kubernetes.repo /etc/yum.repos.d/
