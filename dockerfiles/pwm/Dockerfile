@@ -1,4 +1,4 @@
-ARG VERSION=docker:stable-dind
+ARG VERSION=docker:20.10.20-dind
 FROM ${VERSION}
 
 RUN apk add --no-cache git tmux vim curl bash build-base qemu-img qemu-system-x86_64
