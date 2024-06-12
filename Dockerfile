@@ -9,7 +9,7 @@ RUN ssh-keygen -N "" -t rsa -f /etc/ssh/ssh_host_rsa_key >/dev/null
 RUN CGO_ENABLED=0 go build -a -installsuffix nocgo -o /go/bin/play-with-docker .
 
 
-FROM alpine
+FROM alpine:3.18.3
 
 RUN apk --update add ca-certificates
 RUN mkdir -p /app/pwd
